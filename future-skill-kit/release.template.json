@@ -1,0 +1,10 @@
+{
+  "slug": "nome-da-skill",
+  "displayName": "nome-da-skill",
+  "version": "X.Y.Z",
+  "sourceDir": "/caminho/para/skills/nome-da-skill",
+  "packageFile": "nome-da-skill.skill",
+  "shortDescription": "Descrição curta e objetiva da skill.",
+  "tags": ["tag1", "tag2", "tag3"],
+  "changelog": "Resumo objetivo do release."
+}
