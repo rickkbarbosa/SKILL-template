@@ -18,12 +18,20 @@ Não inclui nesta versão:
 - [fora de escopo 1]
 - [fora de escopo 2]
 
+## Plataformas compatíveis
+
+Esta skill funciona em **Hermes** e **OpenClaw** sem modificações.
+
+| Plataforma | Instalação |
+|-----------|------------|
+| **Hermes** | Copiar diretório para `~/.hermes/skills/<nome>/` |
+| **OpenClaw** | Usar o arquivo `.skill` (tar.gz) |
+
 ## Artefato recomendado para publicação
 
 Para publicar, use:
-- `nome-da-skill.skill`
-
-O `.zip` externo serve para backup, revisão humana e distribuição da release completa.
+- `nome-da-skill.skill` — pacote nativo OpenClaw
+- `nome-da-skill-1.0.0.zip` — release completa (Hermes + OpenClaw)
 
 ## Conteúdo da release
 
@@ -34,6 +42,7 @@ O `.zip` externo serve para backup, revisão humana e distribuição da release 
 - `references/...`
 - `release.json`
 - `README.md`
+- `.env.example`
 
 ## Metadata pública sugerida
 
