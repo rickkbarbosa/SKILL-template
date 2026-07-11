@@ -1,15 +1,23 @@
 ---
 name: nome-da-skill
-description: Descreva de forma objetiva o que a skill faz, quando deve ser usada, quais tarefas disparam seu uso e quais limites de segurança/importância existem.
+description: "Descreva de forma objetiva o que a skill faz, quando deve ser usada, quais tarefas disparam seu uso e quais limites de segurança/importância existem."
+version: 0.1.0
+author: Seu Nome
+license: MIT
+platforms: [linux, darwin]
 metadata:
-  {
-    "openclaw": {
-      "os": ["linux", "darwin"],
-      "requires": {
-        "bins": ["bash"]
-      }
-    }
-  }
+  hermes:
+    tags: [tag1, tag2]
+    category: devops
+    related_skills: []
+    requires_toolsets: [terminal]
+  openclaw:
+    os: [linux, darwin]
+    requires:
+      bins: [bash]
+    install:
+      pip: ""
+required_environment_variables: []
 ---
 
 # Nome da Skill
@@ -67,6 +75,8 @@ Leia esta referência quando precisar de detalhes, regras, formatos ou contexto 
 - O `description` explica claramente quando usar a skill.
 - O `SKILL.md` só referencia arquivos que realmente existem.
 - Dependências reais foram declaradas em `metadata.openclaw.requires.bins`.
+- Dependências reais foram declaradas em `metadata.hermes.requires_toolsets`.
 - O texto não cita caminhos locais específicos do autor sem necessidade.
 - Scripts e referências estão coerentes com o que o `SKILL.md` promete.
-- A release `.skill` foi validada e testada.
+- A release `.skill` foi validada e testada (OpenClaw).
+- O diretório da skill foi copiado para `~/.hermes/skills/` e testado (Hermes).

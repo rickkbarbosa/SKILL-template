@@ -1,0 +1,28 @@
+# Dependencies
+node_modules/
+vendor/
+.venv/
+venv/
+__pycache__/
+*.pyc
+
+# Secrets & credentials
+.env
+*.env.local
+*.env.production
+
+# OS artifacts
+.DS_Store
+Thumbs.db
+
+# Build artifacts
+dist/
+*.skill
+*.zip
+*.tar.gz
+*.sha256
+
+# IDE
+.idea/
+.vscode/
+*.swp
